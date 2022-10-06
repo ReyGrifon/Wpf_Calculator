@@ -1,0 +1,50 @@
+﻿<Window x:Class="Wpf_Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Calculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="330">
+    <!--<Style> 
+        
+    </Style>-->
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="1.5*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="result" Text="" Grid.ColumnSpan="4" Background="#7F7FFFD4" FontSize="35"/>
+        <Button x:Name="Button0" Grid.Column="1" Grid.Row="5" Background="White" BorderBrush="black" Content="0" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button1" Grid.Column="0" Grid.Row="4" Background="White" BorderBrush="black" Content="1" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button2" Grid.Column="1" Grid.Row="4" Background="White" BorderBrush="black" Content="2" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button3" Grid.Column="2" Grid.Row="4" Background="White" BorderBrush="black" Content="3" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button4" Grid.Column="0" Grid.Row="3" Background="White" BorderBrush="black" Content="4" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button5" Grid.Column="1" Grid.Row="3" Background="White" BorderBrush="black" Content="5" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button6" Grid.Column="2" Grid.Row="3" Background="White" BorderBrush="black" Content="6" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button7" Grid.Column="0" Grid.Row="2" Background="White" BorderBrush="black" Content="7" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button8" Grid.Column="1" Grid.Row="2" Background="White" BorderBrush="black" Content="8" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Button9" Grid.Column="2" Grid.Row="2" Background="White" BorderBrush="black" Content="9" FontSize="35" Click="Button_Click"/>
+        <Button x:Name="Clear" Grid.Column="1" Grid.Row="1" Background="White" BorderBrush="black" Content="C" FontSize="35" Click="Button_Clear"/>
+        <Button x:Name="Eraze" Grid.Column="2" Grid.Row="1" Background="White" BorderBrush="black" Content="◄" FontSize="35" Click="Button_Eraze"/>
+        <Button x:Name="Clean_Entry" Grid.Column="0" Grid.Row="1" Background="White" BorderBrush="black" Content="CE" FontSize="35" Click="Button_Clean_Entry"/>
+        <Button x:Name="addition" Grid.Column="3" Grid.Row="4" Background="White" BorderBrush="black" Content="+" FontSize="35" Click="Button_Op_Click"/>
+        <Button x:Name="subtraction" Grid.Column="3" Grid.Row="3" Background="White" BorderBrush="black" Content="-" FontSize="35" Click="Button_Op_Click"/>
+        <Button x:Name="multiplication" Grid.Column="3" Grid.Row="2" Background="White" BorderBrush="black" Content="x" FontSize="35" Click="Button_Op_Click"/>
+        <Button x:Name="division" Grid.Column="3" Grid.Row="1" Background="White" BorderBrush="black" Content="/" FontSize="35" Click="Button_Op_Click"/>
+        <Button x:Name="Equals" Grid.Column="3" Grid.Row="5" Background="White" BorderBrush="black" Content="=" FontSize="35" Click="Button_Answer"/>
+        <Button x:Name="button_comma" Grid.Column="2" Grid.Row="5" Background="White" BorderBrush="black" Content="," FontSize="35" Click="Button_Comma"/>
+        <Button x:Name="change" Grid.Column="0" Grid.Row="5" Background="White" BorderBrush="black" Content="+/-" FontSize="35" Click="Button_Change"/>
+        
+    </Grid>
+</Window>
